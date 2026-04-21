@@ -170,65 +170,10 @@ const QA = [
 
   // ── MEMBER QUESTIONS ─────────────────────────────────────────────────────
 
-  {
-    q: "Tell me about Kavya.",
-    tags: ["who is kavya", "tell me about kavya", "describe kavya", "introduce kavya", "kavya overall", "kavya general", "kavya introduction", "kavya person"],
-    a: {
-      kavya:   "wait am I describing myself\nthis is so awkward 👉🏾👈🏾\nokay fine\nI think I care too much about too many things\nand I'm working on that\nbut also maybe not 🤡",
-      urvi:    "Kavya is the one who actually listens. Properly. And then sends you a voice note at midnight about it.",
-      kushal:  "Bro Kavya is the heart of this group 🫡\nShe does very important social impact work\nBuilding workshops and resources\nVery serious work done very quietly\nAlso sends the most stickers of anyone I know\nBoth things are true simultaneously",
-      swapnil: "Overthinks. But in a good way. Always means well.",
-      aditi:   "Kavya is\nokay she is the warmest person\nshe doubts herself sometimes even when she is clearly right\nwe remind her and she is getting better at this\nalso she has a sticker for every single emotion\neveryone needs a kavya\n😂😂h"
-    }
-  },
 
-  {
-    q: "Tell me about Urvi.",
-    tags: ["who is urvi", "tell me about urvi", "describe urvi", "introduce urvi", "urvi overall", "urvi general", "urvi introduction", "urvi person"],
-    a: {
-      kavya:   "urvi says the least and means the most\nyou have to pay attention\nbecause when she does say something it's always exactly right\nalso she is a photographer and her eye for things is just\n😮😮\nhaina she notices everything",
-      urvi:    "I'd rather not.",
-      kushal:  "Urvi bro 🫡\nSays three words\nAll three land perfectly\nPhotographer\nVegetarian\nHas extremely strong opinions about plants\nVery quietly eventful person",
-      swapnil: "Very calm. Very sharp. Doesn't miss anything.",
-      aditi:   "Urvi is the person who will\nnot say anything for hours\nand then say one thing\nthat makes everyone go\noh\nOHHH\nyeah that\nalso she has the most beautiful eye for photography"
-    }
-  },
 
-  {
-    q: "Tell me about Kushal.",
-    tags: ["who is kushal", "tell me about kushal", "describe kushal", "introduce kushal", "kushal overall", "kushal general", "kushal introduction", "kushal person"],
-    a: {
-      kavya:   "kushal is the reason we actually leave our houses\nhe will plan, he will drive, he will pick everyone up\nand then crack a joke so bad that you forget you were tired\nhaina the dad joke energy is both his curse and his gift 🤡",
-      urvi:    "Corporate lawyer who shows up with his car and a terrible pun. Every time.",
-      kushal:  "I is very humble person\nCannot describe myself\n🫡\nBut also I has driven everyone everywhere\nSomeone must acknowledge this",
-      swapnil: "Kushal shows up. Every time. That says everything.",
-      aditi:   "KUSHAL\nokay so\nhe is a lawyer\nwhich you would never guess\nbecause he is always the one saying\n\"chalo aaj milte hain\"\nand then he comes and picks everyone up\nand then makes a joke that always lands somehow\nbecause delivery hai uski\nalso marathi mein jo karta hai swap ke saath\nthat is a whole show honestly"
-    }
-  },
 
-  {
-    q: "Tell me about Swapnil.",
-    tags: ["who is swapnil", "tell me about swapnil", "describe swapnil", "introduce swapnil", "swapnil overall", "swapnil general", "swapnil introduction", "swapnil person"],
-    a: {
-      kavya:   "swapnil will say no to a plan\nthen show up first\ndesigner brain, always noticing things no one else noticed\nquiet but when he says something it just lands\nhaina that's the swapnil experience 👉🏾👈🏾",
-      urvi:    "Says no. Shows up. Says nothing. Notices everything.",
-      kushal:  "Bhai Swapnil 🫡\nUI UX designer\nFirst answer is always no\nSecond answer is also no\nThird answer is \"okay fine I'm coming\"\nAlso we do Marathi bits together which no one else understands\nThis is our power",
-      swapnil: "...",
-      aditi:   "Swapnil is\nthe most silent person in the room\nwho is also somehow the funniest\nbecause he will say ONE thing\njust one\nand it will be the most accurate thing ever said\nalso he was sitting right next to me when I learned panchayat on keyboard\nhe witnessed my entire journey\nrespect"
-    }
-  },
 
-  {
-    q: "Tell me about Aditi.",
-    tags: ["who is aditi", "tell me about aditi", "describe aditi", "introduce aditi", "aditi overall", "aditi general", "aditi introduction", "aditi person"],
-    a: {
-      kavya:   "aditi is ENERGY\nshe is branding, marketing, filmmaking, driving, planning, doing\nand she is always somehow doing all of it at once\nalso she understands a little marathi and will throw in a pun sometimes\nwhich honestly no one sees coming\nhaina she keeps everyone on their toes 🤡",
-      urvi:    "Aditi initiates. Aditi drives. Aditi does not stop.",
-      kushal:  "Aditi bro 🫡\nHyperactivity personified\nBranding and marketing and filmmaking\nAlways has a plan and a backup plan\nAlso drives everyone places which is very appreciated\nSometimes throws a Marathi pun and catches everyone off guard\nVery surprising energy",
-      swapnil: "Always moving. Always doing something. Hard to keep up. Very fun.",
-      aditi:   "who gave you permission to ask about me\nijbolh\nokay fine\nI am just a girl\nwho loves her work\nand her friends\nand driving everyone around\nand occasionally understanding marathi well enough to make a pun\nand that is enough"
-    }
-  },
 
   // ── EXACT WHO IS X — guaranteed correct routing ──────────────────────────
 
@@ -276,7 +221,7 @@ const QA = [
       urvi:    "UI UX designer. Says no. Shows up. Says very little. Everything he says is worth it.",
       kushal:  "Bhai Swapnil 🫡\nUI UX designer\nVery quiet person\nVery thoughtful person\nFirst answer no, final answer yes\nWe do Marathi bits together\nThis is our bond\nAlso he witnessed Aditi learn panchayat on keyboard\nVery important historical moment",
       swapnil: "UI UX designer. Quiet. Overthinks sometimes. Shows up always.",
-      aditi:   "Swapnil is a UI UX designer\nand he is the most quiet person in the group\nbut also somehow the most accurate\nhe will say one thing and it will be the most on-point thing anyone said all evening\nalso he was witness to my panchayat keyboard moment\nhe is a loyal friend\nhahahahah"
+      aditi:   "Swapnil is the most silent person in the room\nalso he was sitting right next to me when I learned panchayat on keyboard\nhe witnessed my entire journey\nrespect"
     }
   },
 
@@ -362,7 +307,7 @@ const QA = [
       urvi:    "Kavya. Then Aditi. Then me occasionally. Then Kushal in bursts. Then Swapnil once a week.",
       kushal:  "Bhai I am very strategic with my words 🫡\nKavya and Aditi are doing the heavy lifting\nI come in at key moments\nFor the jokes\nAnd the planning\nVery targeted communication",
       swapnil: "Not me.",
-      aditi:   "ME\nand Kavya\nwe are basically co-anchors of this group\nbut I talk in one-word bursts\nso it might look like more\nKavya talks in paragraphs\nboth styles valid\n🤣🤣🤣h"
+      aditi:   "ME\nand Kavya\nwe are basically co anchors of this group\nbut I talk in one word bursts\nso it might look like more\nKavya talks in paragraphs\nboth styles valid\n🤣🤣🤣h"
     }
   },
 
@@ -481,11 +426,11 @@ const QA = [
     q: "Why is Kushal the organiser of the group?",
     tags: ["kushal organiser", "kushal organizer", "kushal leader", "kushal glue", "kushal holds", "kushal together", "kushal group", "kushal anchor", "kushal responsible", "kushal manages group", "kushal takes charge", "kushal steps up", "group organiser", "who organises", "who leads"],
     a: {
-      kavya:   "I think some people are just wired to bring others together\nand kushal is genuinely that person\nhe gets joy from everyone being in the same room\nand that joy is contagious\nhaina we're all very lucky he's in our lives 👉🏾👈🏾",
-      urvi:    "He enjoys it. And he's good at it. Natural fit.",
-      kushal:  "I is just very caring 🫡\nI wants everyone to be okay\nAnd together\nAnd happy\nSo I makes it happen\nVery simple motivation actually",
-      swapnil: "Because he genuinely wants us all together. You can feel it.",
-      aditi:   "Kushal has this quality\nwhere he genuinely lights up\nwhen the whole group is together\nand I think we all feel that\nso when he says chalo milte hain\nwe all want to say yes\nbecause his enthusiasm is real\nand that's rare"
+      kavya:   "okay so aditi takes the lead most of the time honestly\nkushal is also very much there\nand I step up sometimes when I'm around\nhaina between the three of us it always happens 👉🏾👈🏾",
+      urvi:    "Aditi mostly. Kushal too. Kavya sometimes. It always gets done.",
+      kushal:  "Bhai Aditi also initiates a lot 🫡\nI also do my part\nKavya also steps up when she can\nVery good team effort\nVery well distributed organising",
+      swapnil: "Aditi mostly, Kushal too, Kavya sometimes. Between them it always happens.",
+      aditi:   "okay yes I do take initiative a lot\nI just want everyone together and I make it happen\nKushal also does it all the time\nand Kavya steps up too\nwe are a good team honestly\n😂😂"
     }
   },
 
@@ -621,7 +566,7 @@ const QA = [
       urvi:    "Always have been. It just is.",
       kushal:  "Bhai Urvi has always been vegetarian 🫡\nShe navigates it very smoothly\nAlways finds what she needs\nNever makes anyone else feel bad about it\nVery balanced approach",
       swapnil: "It's just her. Nobody thinks about it. It's normal.",
-      aditi:   "Urvi is vegetarian\nand the most non-dramatic vegetarian I know\nlike she just\nfinds the vegetarian option\neats it happily\nnever complains\nand never makes it anyone else's problem\ngoals honestly"
+      aditi:   "Urvi is vegetarian\nand the most non dramatic vegetarian I know\nlike she just\nfinds the vegetarian option\neats it happily\nnever complains\nand never makes it anyone else's problem\ngoals honestly"
     }
   },
 
@@ -696,7 +641,7 @@ const QA = [
       urvi:    "He processes quietly. When he has something to say, he says it. No filler.",
       kushal:  "Bhai Swapnil is very intentional 🫡\nHe doesn't speak just to fill space\nAnd that means when he does say something\nEveryone actually hears it\nVery good communication strategy honestly",
       swapnil: "I listen more than I talk. That works for me.",
-      aditi:   "Swapnil is quiet\nbut not absent\nlike you always know he's there\nand paying attention\nand when he says something\nit's usually the most on-point thing in the conversation\nquality over quantity fully"
+      aditi:   "Swapnil is quiet\nbut not absent\nlike you always know he's there\nand paying attention\nand when he says something\nit's usually the most on point thing in the conversation\nquality over quantity fully"
     }
   },
 
@@ -713,17 +658,6 @@ const QA = [
     }
   },
 
-  {
-    q: "Why is Swapnil sometimes a people pleaser?",
-    tags: ["swapnil people pleaser", "swapnil pleasing", "swapnil says yes", "swapnil too nice", "swapnil accommodating", "swapnil can't say no", "swapnil gives in", "swapnil conflict averse", "swapnil avoid conflict", "swapnil gentle", "swapnil kind", "swapnil too agreeable"],
-    a: {
-      kavya:   "I think it comes from genuinely not wanting to make things difficult for anyone\nand that's such a kind impulse\nhaina even if it means sometimes he needs to speak up for himself more 👉🏾👈🏾",
-      urvi:    "He dislikes conflict. Which is kind. He's learning to speak up when it matters.",
-      kushal:  "Bhai Swapnil is very considerate 🫡\nHe thinks about how things affect others\nSometimes more than himself\nBut he's also getting better at standing firm\nWhen it counts",
-      swapnil: "I prefer harmony. Working on the balance.",
-      aditi:   "Swapnil cares about the people around him\nand doesn't want to cause friction\nwhich is beautiful\nbut we also want him to know\nhis comfort matters too\nand we're here for that"
-    }
-  },
 
   {
     q: "What are Swapnil's Marathi bits with Kushal like?",
@@ -828,7 +762,7 @@ const QA = [
     tags: ["aditi texts", "aditi messages", "aditi one word", "aditi short messages", "aditi typing style", "aditi bursts", "aditi rapid fire", "aditi sends", "aditi whatsapp", "aditi hqhqhq", "aditi jmdlr", "aditi style", "aditi typing", "aditi text style", "aditi message style"],
     a: {
       kavya:   "because her brain moves faster than she can type in full sentences\nso the thoughts come out one by one\nand honestly it's very endearing\nhaina it's like getting a thought in real time 👉🏾👈🏾",
-      urvi:    "Her brain moves faster than full sentences allow. The one-word burst is more accurate.",
+      urvi:    "Her brain moves faster than full sentences allow. The one word burst is more accurate.",
       kushal:  "Bhai Aditi typing is its own language 🫡\nOne word\nThen another word\nThen another word\nAnd then one full sentence that ties it all together\nVery dramatic pacing\nVery entertaining",
       swapnil: "It's how her thoughts arrive. Fast. One at a time. Very her.",
       aditi:   "Okay so\nmy brain\ngoes very fast\nand if I wait to type a full sentence\nI will forget something\nso I just\nsend\nas I think\nand it arrives\nin pieces\nbut it all makes sense\nat least to me\n💀💀hq"
@@ -978,17 +912,6 @@ const QA = [
     }
   },
 
-  {
-    q: "Does Swapnil have any hobbies outside design?",
-    tags: ["swapnil hobbies", "swapnil outside design", "swapnil interests beyond work", "swapnil other interests", "swapnil non design", "swapnil personal interests", "swapnil creative outside work", "swapnil activities outside"],
-    a: {
-      kavya:   "I think there's a lot more going on in swapnil's world that he keeps close\nhaina he's quite private but in a very content way\nnoticing things is probably its own hobby for him 👉🏾👈🏾",
-      urvi:    "He keeps that private. But you can tell there's depth there.",
-      kushal:  "Bhai Swapnil is private person 🫡\nBut I think he has many interests\nHe just does not broadcast them\nVery internal person\nVery rich inner world I think",
-      swapnil: "Yes. Just not everything needs to be shared.",
-      aditi:   "Swapnil definitely has things he loves beyond design\nhe just doesn't make a big thing of it\nwhich is so him\nhqhqh"
-    }
-  },
 
   // ── ADITI CUSTOM QUESTIONS ───────────────────────────────────────────────
 
