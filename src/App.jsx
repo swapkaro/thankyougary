@@ -1423,32 +1423,15 @@ export default function App() {
         </div>
 
         {/* CHIPS */}
-        {!hasAnswers && !loading && !allSeen && (
+        {!hasAnswers && !loading && (
           <div style={{ display:"flex", flexWrap:"wrap", gap:7, marginBottom:28, animation:"up .4s ease both" }}>
-            {chips.map((c, i) => (
+            {chips && chips.map((c, i) => (
               <button key={i} onClick={() => chipClick(c)}
                 style={{ padding:"6px 13px", background:"transparent", border:`1px solid ${BRD}`, borderRadius:100, fontFamily:"'DM Mono',monospace", fontSize:11, color:SOFT, cursor:"pointer", transition:"all .15s", lineHeight:1.5, textAlign:"left" }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor=INK; e.currentTarget.style.color=INK; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor=BRD; e.currentTarget.style.color=SOFT; }}
               >{c}</button>
             ))}
-          </div>
-        )}
-
-        {/* ALL SEEN MESSAGE */}
-        {allSeen && !loading && (
-          <div style={{ animation:"up .4s ease both", marginBottom:28, textAlign:"center", padding:"20px 0" }}>
-            <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, color:INK, marginBottom:8 }}>
-              you've seen everything the table has to say 💕
-            </div>
-            <div style={{ fontFamily:"'DM Mono',monospace", fontSize:10, color:SOFT, opacity:.6, fontStyle:"italic", marginBottom:20 }}>
-              the round table is getting to know itself more
-            </div>
-            <button onClick={handleReset}
-              style={{ padding:"8px 20px", background:"transparent", border:`1px solid ${BRD}`, borderRadius:100, fontFamily:"'DM Mono',monospace", fontSize:11, color:SOFT, cursor:"pointer", transition:"all .15s" }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor=INK; e.currentTarget.style.color=INK; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor=BRD; e.currentTarget.style.color=SOFT; }}
-            >see all questions again</button>
           </div>
         )}
 
@@ -1488,11 +1471,25 @@ export default function App() {
               ))}
             </div>
 
-            {!allSeen && (
+            {allSeen ? (
+            <div style={{ marginBottom:28, animation:"up .5s ease .25s both", textAlign:"center", padding:"16px 0" }}>
+              <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:15, color:INK, marginBottom:8 }}>
+                you've seen everything the table has to say 💕
+              </div>
+              <div style={{ fontFamily:"'DM Mono',monospace", fontSize:10, color:SOFT, opacity:.6, fontStyle:"italic", marginBottom:20 }}>
+                the round table is getting to know itself more
+              </div>
+              <button onClick={handleReset}
+                style={{ padding:"8px 20px", background:"transparent", border:`1px solid ${BRD}`, borderRadius:100, fontFamily:"'DM Mono',monospace", fontSize:11, color:SOFT, cursor:"pointer", transition:"all .15s" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor=INK; e.currentTarget.style.color=INK; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor=BRD; e.currentTarget.style.color=SOFT; }}
+              >see all questions again</button>
+            </div>
+            ) : (
             <div style={{ marginBottom:28, animation:"up .5s ease .25s both" }}>
               <div style={{ fontFamily:"'DM Mono',monospace", fontSize:9, letterSpacing:"0.16em", textTransform:"uppercase", color:SOFT, opacity:.4, marginBottom:10 }}>more questions</div>
               <div style={{ display:"flex", flexWrap:"wrap", gap:7 }}>
-                {chips.map((c, i) => (
+                {chips && chips.map((c, i) => (
                   <button key={i} onClick={() => chipClick(c)}
                     style={{ padding:"6px 13px", background:"transparent", border:`1px solid ${BRD}`, borderRadius:100, fontFamily:"'DM Mono',monospace", fontSize:11, color:SOFT, cursor:"pointer", transition:"all .15s", lineHeight:1.5, textAlign:"left" }}
                     onMouseEnter={e => { e.currentTarget.style.borderColor=INK; e.currentTarget.style.color=INK; }}
