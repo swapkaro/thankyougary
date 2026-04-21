@@ -1137,38 +1137,40 @@ function pickFromCat(cat, seen) {
 
 // Get 4 balanced chips — one from group, one from a rotating member, fill rest
 function getBalancedChips(seen) {
+  const allUnseen = CHIP_QUESTIONS.filter(q => !seen.includes(q));
+
+  // Nothing left — signal completion
+  if (allUnseen.length === 0) return null;
+
+  // Show however many are left if fewer than 4 remain
+  const target = Math.min(4, allUnseen.length);
+
   const result = [];
   const used = new Set();
 
   // Always try one group question
   const groupQ = pickFromCat("group", seen);
-  if (groupQ) { result.push(groupQ); used.add(groupQ); }
+  if (groupQ && result.length < target) { result.push(groupQ); used.add(groupQ); }
 
-  // Rotate through members — pick 3 different members randomly
+  // Rotate through members
   const members = ["kushal", "kavya", "urvi", "swapnil", "aditi", "suzy"];
   const shuffled = [...members].sort(() => 0.5 - Math.random());
   for (const m of shuffled) {
-    if (result.length >= 4) break;
+    if (result.length >= target) break;
     const q = pickFromCat(m, seen);
     if (q && !used.has(q)) { result.push(q); used.add(q); }
   }
 
-  // If still need more, pick any unseen
-  if (result.length < 4) {
-    const allUnseen = CHIP_QUESTIONS.filter(q => !seen.includes(q) && !used.has(q));
-    const extra = [...allUnseen].sort(() => 0.5 - Math.random());
+  // Fill remaining from any unseen
+  if (result.length < target) {
+    const extra = [...allUnseen.filter(q => !used.has(q))].sort(() => 0.5 - Math.random());
     for (const q of extra) {
-      if (result.length >= 4) break;
+      if (result.length >= target) break;
       result.push(q);
     }
   }
 
-  // If everything is seen — signal completion, don't silently reset
-  if (result.length < 4) {
-    return null;
-  }
-
-  return result;
+  return result.length > 0 ? result : null;
 }
 
 function getRandomChips(seen) {
